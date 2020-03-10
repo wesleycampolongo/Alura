@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+
+        document.write("<br>");
+
+	}
+
+function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+	}
+
+var numero = parseInt(prompt("Informe um numero para calcular a Tabuada"));
+//var multiplicador = 0;
+
+
+mostra ("Tabuada do " + numero);
+
+for (var multiplicador = 0; multiplicador <= 10; multiplicador++) {
+	
+	var x = numero;
+	x = x * multiplicador;
+	mostra (numero + "x" + multiplicador + "=" + x);
+	
+}
+
+//while (multiplicador <= 10) {
+	
+	//var x = numero;
+	//x = x * multiplicador;
+	//mostra (numero + "x" + multiplicador + "=" + x);
+	//multiplicador = multiplicador + 1;
+	//console.log (numero);
+
+//}
+
+	
+</script>
